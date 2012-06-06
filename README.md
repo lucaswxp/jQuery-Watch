@@ -13,7 +13,8 @@ For example, let's say you are using the jQuery UI DatePicker plugin:
 ```javascript
 jQuery(function(){
     $('input.calendar').datepicker();
-});```
+});
+```
 
 This will works great for all inputs with the class "calendar" on it. But what if you need to dynamically add some more .calendar inputs in the page? (direct dom change, ajax, etc)
 
@@ -23,7 +24,8 @@ jQuery(function(){
 
 
     $('body').append('<input type="text" class="calendar" />');
-});```
+});
+```
 
 The appended input will not be initialized, since the jQuery DatePicker call was made BEFORE you added that content.
 
@@ -42,6 +44,7 @@ jQuery(function(){
 
 
     $('body').append('<input type="text" class="calendar" />');
-});```
+});
+```
 
 That's it! Now all new input.calendar added to the DOM will be properly initialized.
